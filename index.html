@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bad Quiz Application</title>
+        <script src="index.js" defer></script>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <div class="question-wrapper">
+                <h1 class="question" id="question">(question goes here...)</h1>
+            </div>
+            <div class="answer-wrapper">
+                <button id="answer">Choice One</button>
+                <button id="answer">Choice Two</button>
+                <button id="answer">Choice Three</button>
+                <button id="answer">Choice Four</button>
+            </div>
+            <div class="stats">
+                <div class="score-wrapper">
+                    <h2>Score:</h2>
+                    <h2 id="score">0</h2>
+                </div>
+                <div class="health-bar-wrapper">
+                    <h2>Health Remaining:</h2>
+                    <div class="health">
+                        <img class="heart-image" src="heart.png">
+                        <div class="health-bar">
+                            <div class="health-bar-fill"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="difficulty-wrapper">
+                    <h2><span>Difficulty:</h2>
+                    <h2 id="difficulty">Easy</h2>
+                </div>
+            </div>
+            <div class="menu" id="info">
+                <h2>instructions:</h2>
+                <ul>
+                    <li>Answer as many questions as you can before you run out of health</li>
+                    <li>You start with 10 life and there is no way to get it back</li>
+                    <li>Easy Questions: -3 life</li>
+                    <li>Medium Questions: -2 life</li>
+                    <li>Hard Questions: -1 life</li>
+                </ul>
+                <button id="start-game">Start Game</button>
+            </div>
+        </main>
+    </body>
+</html>
